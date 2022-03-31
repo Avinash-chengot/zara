@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="products">
+        <a href="product1-details.html"><div>
+            <img src="./images/products/product_1/0706359704_1_1_1.webp">
+        </div></a>
+        <a href="product2-details.html"><div>
+            <img src="./images/products/product_2/3918309806_1_1_1.webp">
+        </div></a>
+        <div>
+            <img src="./images/products/0706359704_6_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/3046377704_1_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/3046377704_6_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/3057606710_1_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/3057606710_6_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/3918309806_15_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/6224321251_15_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/6224321251_6_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/6224330506_15_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/6224330506_6_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/6224331712_6_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/6689570711_15_2_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/6689570711_1_1_1.webp">
+        </div>
+        <div>
+            <img src="./images/products/8779300731_15_2_1.webp">
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type = "module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
+    let nav_div = document.getElementById("navbar") ;
+    nav_div.innerHTML = navbar() ;
+    let foot = document.getElementById("footer") ;
+    foot.innerHTML = footer() ;
+</script>
+<script src="./scripts/products.js"></script>

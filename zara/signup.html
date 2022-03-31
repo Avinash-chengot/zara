@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/signup.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="content">
+        <input type="email" placeholder="Email">
+        <br/>
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Repeat Password">
+        <br/>
+        <input type="text" placeholder="Name">
+        <input type="number" placeholder="PINCODE">
+        <br/>
+        <input type="text" placeholder="ADDRESS">
+        <input type="text" placeholder="MORE INFORMATION">
+        <br/>
+        <input type="text" placeholder="LOCALITY">
+        <input type="text" placeholder="CITY">
+        <br/>
+        <input type="text" placeholder="STATE">
+        <input type="text" placeholder="Region">
+        <br/>
+        <button id="btn">Create Account</button>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type = "module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
+    let nav_div = document.getElementById("navbar") ;
+    nav_div.innerHTML = navbar() ;
+    let foot = document.getElementById("footer") ;
+    foot.innerHTML = footer() ;
+</script>

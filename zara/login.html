@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="content">
+        <div>
+            <h3>LOG IN</h3>
+            <input type="email" id="login" placeholder="E-MAIL">
+            <input type="password" id="password" placeholder="PASSWORD">
+            <p>HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
+            <button>LOG IN</button>
+        </div>
+        <div>
+            <h3>REGISTER</h3>
+            <p>IF YOU DON'T HAVE A ZARA.COM ACCOUNT, USE THIS OPTION TO ACCESS THE REGISTRATION FORM.</p>
+            <p>BY GIVING US YOUR DETAILS, PURCHASING IN ZARA.COM WILL BE FASTER AND AN ENJOYABLE EXPERIENCE.</p>
+            <a href="signup.html"><button>CREATE ACCOUNT</button></a>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type = "module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
+    let nav_div = document.getElementById("navbar") ;
+    nav_div.innerHTML = navbar() ;
+    let foot = document.getElementById("footer") ;
+    foot.innerHTML = footer() ;
+</script>

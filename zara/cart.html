@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cart.css">
+</head>
+<body>
+    <div id="navbar"> </div>
+    <div id="content">
+        <h2>SHOPPING BAG</h2>
+        <div id="items">1 ITEM</div>
+        <div id="products"></div>
+        <div id="checkout">
+            <a href="payment.html"><button id="continue">Continue</button></a>
+            <div id="details">
+                <p id=total></p>
+                <p>INCLUDING GST</p>
+                <p>*EXCL SHIPPING COST</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+</html>
+<script type = "module">
+    import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
+    let nav_div = document.getElementById("navbar") ;
+    nav_div.innerHTML = navbar() ;
+    let foot = document.getElementById("footer") ;
+    foot.innerHTML = footer() ;
+
+</script>
+<script src="./scripts/cart.js"></script>
